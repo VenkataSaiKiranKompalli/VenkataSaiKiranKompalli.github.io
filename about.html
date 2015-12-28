@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spring Spree 2016 - NIT Warangal</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header" style="padding-right:150px">
+				<a href="http://www.nitw.ac.in/nitw" target="_blank"><img src="images/nitw-logo1.jpg" alt="nitw-logo" class="navbar-brand img-responsive"></a>
+				<a href="http://www.nitw.ac.in/nitw" target="_blank" class="navbar-brand hidden-xs">National Institute of Technology, Warangal</a>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nb" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="home.html" class="navbar-brand"><img src="images/logo.jpg" class="img-responsive img-circle" style="width:30px"></a>
+			</div>
+			<div id="nb" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="home.html"><span class="glyphicon glyphicon-home" arai-hidden="true"></span>Home</a></li>
+					<li class="active"><a href="about.html"><span class="glyphicon glyphicon-blackboard" arai-hidden="true"></span>About</a></li>
+					<li><a href="events.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Events</a></li>
+					<li><a href="sponsors.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Sponsors</a></li>
+					<li><a href="contactus.html"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Contact us</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="padding:7px 18px 0px 0px">
+					<button class="btn btn-success" type="button" data-toggle="modal" data-target="#si">Login</button>
+					<button class="btn btn-success" type="button" data-toggle="modal" data-target="#su">Register</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row" style="padding-top:100px">
+			<div class="col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="home.html">Home</a></li>
+					<li id="bc" class="active">About / History</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="su" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span style="background-color:#000;color:#fff;font-size:35px">&times;</span></button>
+					<h4 class="modal-title"><span class="glyphicon glyphicon-briefcase">Register</span></h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label class="control-label" for="name"><span class="glyphicon glyphicon-pencil"></span>Full Name</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="username"><span class="glyphicon glyphicon-user"></span>User Name</label>
+							<input type="text" class="form-control" id="username" name="username" placeholder="User Name">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="pwd"><span class="glyphicon glyphicon-eye-open"></span>Password</label>
+							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="dob"><span class="glyphicon glyphicon-calendar"></span>Date of Birth</label>
+							<input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="email"><span class="glyphicon glyphicon-envelope"></span>Email</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="email">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="phno"><span class="glyphicon glyphicon-phone"></span>Contact Number</label>
+							<input type="tel" class="form-control" id="phno" name="phno" placeholder="Contact Number">
+						</div>
+						<button class="btn btn-warning btn-block"><span class="glyphicon glyphicon-off">Register</span></button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<p>Already Registered?<button class="btn btn-link" type="button" data-toggle="modal" data-target="#si">Login</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="si" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span style="background-color:#000;color:#fff;font-size:35px">&times;</span></button>
+					<h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span>Login</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label class="control-label" for="username"><span class="glyphicon glyphicon-user"></span>User Name</label>
+							<input type="text" class="form-control" id="username" name="username" placeholder="User Name">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="password"><span class="glyphicon glyphicon-eye-open"></span>Password</label>
+							<input type="password" id="password" name="password" class="form-control" placeholder="Password">
+						</div>
+						<div class="checkbox">
+						<label><input type="checkbox">Remember Me</label>
+						</div>
+						<button type="submit" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-off"></span>Login</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<p>Not Registered?<button class="btn btn-link" type="button" data-toggle="modal" data-target="#su">Register</button></p>
+					<a href="#">Forgot Password</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="panel-group" id="accor">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"><a href="#history" onclick="history()" data-parent="#accor" data-toggle="collapse">History</a></h3>
+					</div>
+					<div class="collapse panel-collapse in" id="history">
+						<div class="panel-body">
+							<p>SpringSpree was started in the year 1978 by the students of National Institute of Technology, Warangal.  It was an intercollegiate annual sports and cultural event held between January and March every year. Students came up with the idea of holding a small festival, which would lay down a platform for the students to showcase their skills in the areas of sports, athletics and cultural activities. Additionally, the festival was to unify a diverse student body by celebrating the culture of the regions to which they belonged along with the culture of India as a whole. It was the first college festival in southern India and was conducted every year till the end of the 90s. SpringSpree was not conducted for a few years in the early 2000s. Its revival was gradual with small fests from clubs finally giving rise to a mini cultural festival called Elysium in 2006. In 2007, SpringSpree was brought back and has since been an annual event.</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title"><a onclick="dspree()" data-toggle="collapse" data-parent="#accor" href="#dspree">During Spree</a></h3>
+					</div>
+					<div class="panel-collapse collapse" id="dspree">
+						<div class="panel-body">
+							<p>
+								SpringSpree, a three day annual cultural festival, showcases 55+ events in the fields of art, literature, drama, dance, music, quizzing, photography and painting. Including spotlight events like Fashion Show, Bboying Competition, Rock Music Competition, Model United Nations and Minute Made. A number of arts and skill oriented workshops are also held to give a jump start to the enthusiastic participants. Apart from these, SpringSpree holds various attractions like Amazing Race, Lounge, The One, The Haunted House and many others. To cater to the young entrepreneurs there are events involving business planning and stock marketing.
+							</p>
+							<p>
+								SpringSpree also conducts concerts during the three days of Spree, known Pronites. Famous musicians are invited to close each day of the fest with a bang. In the years prior, National Institute of Technology, Warangal, has seen the likes of Pt. Hariprasad Chaurasia, Pt. Jasraj, Naresh Iyer and Stephen Devassy to name a few. Indian rock bands like Parikrama, Thermal And a Quarter, ThemClones, Drum Cafe and others have also performed.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title"><a onclick="org()" href="#org" data-parent="#accor" data-toggle="collapse">Organisation</a></h3>
+					</div>
+					<div class="panel-collapse collapse" id="org">
+						<div class="panel-body">
+							<p>SpringSpree is a fest conducted by the students of National Institute of Technology, Warangal on a non-profit basis. Every year a core committee of students is chosen by the student council of the college to oversee the smooth running of the fest. They are aided by the student council themselves and a faculty advisor chosen by the administration to assist them in their tasks. The core committee looks after the all important aspects of the fest like Event Conduction, Sponsorship, Publicity, Logistics, Hospitality, Design, Decoration, Accounting and Prizes. Every member of the committee is dedicated to either of these departments. The synchronization between all the working committees is taken care by the student coordinator of the festival. To assist the core committee, a sub-core committee and a work force body is chosen forming an apex structure contributing to a students working team. The success of the festival heavily depends on the efforts and idea of the entire students working team</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><a onclick="overview()" data-toggle="collapse" data-parent="#accor" href="#ov">Overview</a></h3>
+					</div>
+					<div class="panel-collapse collapse" id="ov">
+						<div class="panel-body">
+							<p>
+								Since its inception in 1978, Spree has snowballed into epic proportions. It is one of the largest platforms for college students across the country to come together to celebrate culture, fine arts and social awareness. Spree is a place for the passionate, the sportive, the energetic and the enthusiastic to interact with other like minded peers. Riding on the success of last year’s edition, Springspree comes to you this year with a theme that manifests <big class="badge">THE SILVER SCREEN</big>. We proudly invite you to experience the very spirit of festivity, unbridled energy and passion at SpringSpree ‘16.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script type="text/javascript">
+    	function history() {
+    		document.getElementById('bc').innerHTML="About / History";
+    	}
+    	function dspree() {
+    		document.getElementById('bc').innerHTML="About / During Spree";
+    	}
+    	function org() {
+    		document.getElementById('bc').innerHTML="About / Organisation";
+    	}
+    	function overview() {
+    		document.getElementById('bc').innerHTML="About / Overview";
+    	}
+    </script>
+
+</body>
+</html>
