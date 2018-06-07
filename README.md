@@ -1,2 +1,1 @@
-# VenkataSaiKiranKompalli.github.io
-Spring Spree '16 Website
+Spring Spree 2016
